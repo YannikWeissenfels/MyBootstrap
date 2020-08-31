@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  padding: 0.9rem;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}  
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px;
+}
+
+.hero-image {
+  background-image: url("../img/chocolate.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.row-reverse{
+  flex-direction: row-reverse;
+}

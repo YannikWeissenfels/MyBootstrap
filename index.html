@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyBootstrap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--- Schriftarten & Farbe -->
+    <style>
+        p,
+        head,
+        body {
+            font-family: 'Montserrat';
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: red;
+            font-family: 'Roboto';
+        }
+
+        .hero-text h2,
+        h3 {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .counters {
+            text-align: center;
+            font-size: 500%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body class="bg-secondary">
+    
+    <!--- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyBootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#" title="Start">Start</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" title="Drop1">
+                            Drop1
+                        </a>
+                        <div class="dropdown-menu list-group-item-secondary">
+                            <a class="dropdown-item" href="#" title="Auswahl 1">Auswahl 1</a>
+                            <a class="dropdown-item" href="#" title="Auswahl 2">Auswahl 2</a>
+                            <a class="dropdown-item" href="#" title="Auswahl 3">Auswahl 3</a>
+                            <a class="dropdown-item" href="#" title="Auswahl 4">Auswahl 4</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#" title="&Uuml;ber">&Uuml;ber</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Drop2</a>
+                        <div class="dropdown-menu list-group-item-secondary">
+                            <a class="dropdown-item" href="#" title="Auswahl 1">Auswahl 1</a>
+                            <a class="dropdown-item" href="#" title="Auswahl 2">Auswahl 2</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#" title="Kontakt">Kontakt</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#" title="Blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Image-->
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2 class="display-4">Schokolade macht gl&uuml;cklich!</h2>
+            <hr>
+            <h3 class="display-5">Schokolade ist Gl&uuml;ck.</h3>
+        </div>
+    </div>
+
+    <hr>
+    <!-- 2 Zeilen 2 Spalten Sektion-->
+    <div class="container-fluid padding">
+        <!-- 1. Zeile -->
+        <div class="row padding row-reverse">
+            <div class="col-sm-12 col-md-6">
+                <img src="img/logo1.png" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h2>Skalierbare Server-Infrastruktur</h2>
+                <!-- Akkordeon Bereich -->
+
+                <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne1">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseOne1"
+                                aria-expanded="true" aria-controls="collapseOne1">
+                                <h5 class="mb-0">
+                                    Technik <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
+                            data-parent="#accordionEx1">
+                            <div class="card-body">
+                                Die Technik...
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo1">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                                aria-expanded="false" aria-controls="collapseTwo1">
+                                <h5 class="mb-0">
+                                    Vorteile <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+                            data-parent="#accordionEx1">
+                            <div class="card-body">
+                                Die Vorteile...
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree1">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+                                <h5 class="mb-0">
+                                    Besseres Online-Marketing <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1"
+                            data-parent="#accordionEx1">
+                            <div class="card-body">
+                                Besseres Online-Marketing...
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Accordion card -->
+
+                </div>
+                <!-- Accordion Bereich -->
+            </div>
+        </div>
+        <hr>
+        <!-- 2. Zeile -->
+        <div class="row padding">
+            <div class="col-sm-12 col-md-6">
+                <img src="img/logo2.png" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h2>Modulare Softwarearchitektur</h2>
+                <!-- Akkordeon Bereich -->
+
+                <div class="accordion md-accordion" id="accordionEx2" role="tablist" aria-multiselectable="true">
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne2">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapseOne2"
+                                aria-expanded="true" aria-controls="collapseOne2">
+                                <h5 class="mb-0">
+                                    Technik <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseOne2" class="collapse" role="tabpanel" aria-labelledby="headingOne2"
+                            data-parent="#accordionEx2">
+                            <div class="card-body">
+                                Die Technik...
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo2">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapseTwo2"
+                                aria-expanded="false" aria-controls="collapseTwo2">
+                                <h5 class="mb-0">
+                                    Vorteile <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                            data-parent="#accordionEx2">
+                            <div class="card-body">
+                                Die Vorteile...
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree2">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2"
+                                href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                <h5 class="mb-0">
+                                    Besseres Online-Marketing <i class="fas fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree2" class="collapse" role="tabpanel" aria-labelledby="headingThree2"
+                            data-parent="#accordionEx2">
+                            <div class="card-body">
+                                Besseres Online-Marketing...
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Accordion card -->
+
+                </div>
+                <!-- Accordion Bereich -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 456 Count Down -->
+    <p class="counters" id="inViewport">
+        <span id="counter">456</span>
+    </p>
+
+    <script>
+        var isCounting = false;
+
+        $.fn.isOnScreen = function () {
+            var win = $(window);
+            var viewport = {
+                top: win.scrollTop(),
+                left: win.scrollLeft()
+            };
+            viewport.right = viewport.left + win.width();
+            viewport.bottom = viewport.top + win.height();
+
+            var bounds = this.offset();
+            bounds.right = bounds.left + this.outerWidth();
+            bounds.bottom = bounds.top + this.outerHeight();
+
+            return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+        };
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($('#inViewport').isOnScreen() && isCounting == false) {
+                    // The element is visible, do something
+                    if (document.getElementById("counter").innerHTML == 456 && isCounting == false) {
+                        var i = 456;
+
+                    }
+                    var inv = setInterval(function () {
+
+                        isCounting = true;
+                        if (i >= 17) {
+                            i = i - 17;
+                            document.getElementById("counter").innerHTML = i;
+                        }
+                        else {
+                            document.getElementById("counter").innerHTML = 0;
+                            clearInterval(inv);
+                        }
+                    }, 5000 / (456 / 17));
+                } else {
+                    // The element is NOT visible, do something else
+                    if (document.getElementById("counter").innerHTML == 0) {
+                        setTimeout(function () { document.getElementById("counter").innerHTML = 456; isCounting = false }, 200);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
